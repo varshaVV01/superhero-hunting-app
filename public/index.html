@@ -1,0 +1,51 @@
+<Html>
+    <head>
+        <title>SuperHero Hunter</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="root"></div>
+        <div class="wrapper"> 
+            <div id="logo">
+                <div id="containers"> 
+                    <p id = "heading"> SuperHero Hunter </p> 
+                </div>
+                <!-- Search container on Homepage-->
+            </div>
+            <div class="search-container">
+                <div class="search-element">
+                    <input type="text" class="form-control" placeholder="search Supehero.." id="char-search-box"
+                    onkeyup="findChars()">
+                    <div class="search-list" id="search-list">
+                    </div>
+                    <!-- End of search element-->
+                </div>
+                <div>
+                <a id= "fav-link" href = "favourites/favourite.html"><button id="fav-buttton"> Favourites </button> </a> 
+                </div>
+                <!-- End of search container-->
+            </div>
+            <!--Single Search Container -->
+            <div class="container">
+                <div class="result-container">
+                    <div class="result-grid" id="result-grid">
+                </div>
+            </div>
+            <!--Homepage Superhero Grid-->
+            <div id="home-container">
+                <div id="home-list">
+                    <ul id="home-list-ul">
+                    <!-- Single List item goes here-->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <script src="home.js"></script>
+
+</Html>
